@@ -2,7 +2,7 @@
 ## Introduction
 To complete our training at Talent Path, We must present a capstone project to demonstrate our skills and knowledge that we have been learning for the past few weeks. I have done an indepth analysis on a dataset and created a model that can predict car price at 92% accuracy. My goal for this project is to incorporate the prexisting knowledge that I have of cars and working at a dealership along with my knowledge and skills that I have learning throughout my training.
 
-![][../Images/intro_three.PNG]
+![img][./Images/intro_three.PNG]
 
 ## Objective
 My Objective is to create a set of models with the dataset I cleaned to achieve an accuracy score above 70% with a low RMSE Score. I will then select a model and incorporate it into a small full stack aplication.
@@ -28,8 +28,10 @@ Next I want to see how my data is distributed by price, so i selected a few feat
 !!!! pros 5-8 !!!
 Based on the previous graphs it is very apparent that price has a lot of outliers in a lot of features. For this model to be as accurate as possible and not allow it to be skewed by these outliers in the high price range. I decided to drop all the rows that had a price value above $90,000. This resulted in removing roughly 5,000 rows. I reploted the previous graphs to compare.
 !!!! pros 9 - 12 !!!!
-
+The graphs are much cleaner and even on our scatterplot we can see there is a positive correlation. Although we do still have outliers in our data its not out of range with the overall dataset. I also do not want to go to a lower range in price because we do have biodesiel vehicles in our dataset which are typically in this upper price range.
 ### Remove Under Represented Values
+After viewing the unique values count of the values in each feature I discovered that there are some that had very small counts in regards to the overall size of the data. For example the feature City had a very long list of unique values but almost half of the list had less then 100 records. With that being said some cities were being under represented so I decided to filter out values that were under represented in features for City and Make. I removed all values that had a count of 100 or less in City, and removed all the values that had a count less then 30 in Make.
+
 ### Replacing values
 ### Impute
 

@@ -7,3 +7,8 @@
 ### Remove Under Represented Values
 ### Replacing values
 ### Impute
+
+## Training Models
+
+## Comparing Models
+## Next Steps

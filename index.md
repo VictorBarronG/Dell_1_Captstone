@@ -50,7 +50,7 @@ I still had 512 rows remaing for seating and 79 for horsepower. At this point I 
 ![img](/Images/pros_13.PNG)
 While I went through the process to remove null values I also used the same strategy to replace values for maximum seating where one unique value was "---". I was able to completly recover 376 rows in this feature. At this point I also discovered that Exterior Color had a unique value called "UNKOWN" in which case I decided to drop these values as it is a feature that we cannot extract from another.
 ### Impute
-
+Now at this point there are no null values or unkown values in my dataset. Before I split my data for training I must impute these features into numerical values that I can fit onto my model. My ideal attempt to replace binary values using label transformer and replace multicategorical featues using getDummies was not something my current machine was capable of handling. I decided to also use label encoder for Trim Name and City.
 ## Training Models
 
 ## Comparing Models

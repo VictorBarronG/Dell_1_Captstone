@@ -44,6 +44,11 @@ The graphs are much cleaner and even on our scatterplot we can see there is a po
 After viewing the unique values count of the values in each feature I discovered that there are some that had very small counts in regards to the overall size of the data. For example the feature City had a very long list of unique values but almost half of the list had less then 100 records. With that being said some cities were being under represented so I decided to filter out values that were under represented in features for City and Make. I removed all values that had a count of 100 or less in City, and removed all the values that had a count less then 30 in Make.
 
 ### Replacing values
+Now at this point in my project i would like to take care of the null values that I have. For features such as Maximum Seating and horsepower I indexed all the rows that were missing values, I then looked up the most common unique value for that specific feature based on the Model name associated with each row and replaced the null value. I also did a similar strategy for mileage in the exception that instead of using the model name as a reference, I am using the average miles driven based on the year the vehicle was made. I did this because the miles driven on a vehicle typically has a positive correlation with each other. I was able to recover 6,639 values for Maximum Seating, 4,688 rows for Horsepower, and 8,166 rows for Mileage. 
+![img](/Images/pros_14.PNG)
+I still had 512 rows remaing for seating and 79 for horsepower. At this point I will assume that because I was not able to recover these rows there isnt enough information for these specific vehicles so I decided to remove these rows as the size is negligible compared to the overall amount of rows I have.
+![img](/Images/pros_13.PNG)
+While I went through the process to remove null values I also used the same strategy to replace values for maximum seating where one unique value was "---". I was able to completly recover 376 rows in this feature. At this point I also discovered that Exterior Color had a unique value called "UNKOWN" in which case I decided to drop these values as it is a feature that we cannot extract from another.
 ### Impute
 
 ## Training Models

@@ -87,4 +87,7 @@ For my Final Model I decided to do a Random Forest Regressor with n_estimators o
 ![img](/Images/pros_19.PNG)&nbsp;
 
 ## Comparing Models
+For me to decide my candidate model I had two major factors for my decision. One is that I want a high accuracy but I do not want to sacrifies Overfitting as I want my model to be as accurate and consistent with its answers. And my second deciding factor is RMSE score. RMSE or Root Mean Square Error is the measure of residual values in terms of my target measure which in my case is money. I am using this measure because RMSE is rigorous on residuals, 
+
+
 ## Next Steps

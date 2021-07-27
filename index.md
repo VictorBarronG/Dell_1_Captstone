@@ -15,7 +15,7 @@ I obtained my dataset from kaggle called "US Used cars dataset". This dataset wa
 ## Data Processing
 ### Remove Features
 I decided to start my Data Processing by removing any features that we can simply remove that wont affect our target values and that arent relevant to our situation. As a result of individually looking at the descriptions I brought the amount of features from 66 to 22 including the target feature.
-![img](/Images/pros_1.PNG)
+![img](/Images/Pros_1.PNG)
 
 ### Cleaning Null Values
 Now that the amount of features were reduced I want to remove the amount of nulls that are in the dataset. I used a heat map and value counts to show the amount in the dataset.

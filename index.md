@@ -95,6 +95,9 @@ For me to decide my candidate model I had two major factors for my decision. One
 
 ![img](/Images/pros_22.PNG)&nbsp;
 
+![img](/Images/pros_23.PNG)&nbsp;
+
+![img](/Images/pros_24.PNG)&nbsp;
 ## Conclusion
 
 ## Next Steps

@@ -19,7 +19,7 @@ I decided to start my Data Processing by removing any features that we can simpl
 
 ### Cleaning Null Values
 Now that the amount of features were reduced I want to remove the amount of nulls that are in the dataset. I used a heat map and value counts to show the amount in the dataset.&nbsp;
-![img](/Images/pros_2.PNG)&nbsp;
+![img](/Images/pros_2.PNG)&nbsp;&nbsp;
 ![img](/Images/pros_3.png)&nbsp;
 
 I decided to drop all the rows from the data that were missing values in features where I could not pull information from others features. This included featues such as Frame Damage, trim name, transmission, etc. There were some left over null values but overall the dataset was a lot cleaner and I still had over a millon rows remaining in my dataset.

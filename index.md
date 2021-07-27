@@ -20,23 +20,33 @@ I decided to start my Data Processing by removing any features that we can simpl
 ### Cleaning Null Values
 Now that the amount of features were reduced I want to remove the amount of nulls that are in the dataset. I used a heat map and value counts to show the amount in the dataset.&nbsp;
 ![img](/Images/pros_2.PNG)&nbsp;&nbsp;
+
 ![img](/Images/pros_3.png)&nbsp;
 
 I decided to drop all the rows from the data that were missing values in features where I could not pull information from others features. This included featues such as Frame Damage, trim name, transmission, etc. There were some left over null values but overall the dataset was a lot cleaner and I still had over a millon rows remaining in my dataset.
 The values that are left i want to leave for now as i might be able to remove some if some may be in our outliers.&nbsp;
+
 ![img](/Images/pros_4.PNG)&nbsp;
 
 ### Remove Outliers
 Next I want to see how my data is distributed by price, so i selected a few features to plot against my target value price.&nbsp;
+
 ![img](/Images/pros_5.PNG)&nbsp;
+
 ![img](/Images/pros_6.PNG)&nbsp;
+
 ![img](/Images/pros_7.PNG)&nbsp;&nbsp;
+
 ![img](/Images/pros_8.PNG)&nbsp;
 
 Based on the previous graphs it is very apparent that price has a lot of outliers in a lot of features. For this model to be as accurate as possible and not allow it to be skewed by these outliers in the high price range. I decided to drop all the rows that had a price value above $90,000. This resulted in removing roughly 5,000 rows. I reploted the previous graphs to compare.&nbsp;
+
 ![img](/Images/pros_9.PNG)&nbsp;
+
 ![img](/Images/pros_10.PNG)&nbsp;
+
 ![img](/Images/pros_11.PNG)&nbsp;&nbsp;
+
 ![img](/Images/pros_12.PNG)&nbsp;
 
 The graphs are much cleaner and even on our scatterplot we can see there is a positive correlation. Although we do still have outliers in our data its not out of range with the overall dataset. I also do not want to go to a lower range in price because we do have biodesiel vehicles in our dataset which are typically in this upper price range.

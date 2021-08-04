@@ -97,5 +97,7 @@ For me to decide my candidate model I had two major factors for my decision. One
 ![img](/Images/pros_24.PNG)&nbsp;
 ## Conclusion
 In conclusion, I have selected the Gradient Boosting Regressor as my candidate model as it provided me both high and consistent Accuracy throughout both train and test data as well as provide a low RMSE score compared to MLR. My Random Forest Regressor received a slightly higher accuracy but it was overfitted so results from this model may be inconsistent.
+## Deployment
+I integrated my candidate model to a flask application and successfully upload it to docker hub linked [here](https://hub.docker.com/r/vbarron/capstone) and I also deployed it to aws that will be linked [here](http://18.234.156.71:5000/).
 ## Next Steps
 My next steps for this project will be to build my own web scrapper. I believe if I can obtain data from more sites and update my models regularly I will be able to consistently provide a good working model for any user to use. I would also like to impute my dataset like I originally planned if resources are available.
